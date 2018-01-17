@@ -122,3 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 解決 JSON 序列化問题
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path ,re_path
-from restaurants.views import menu, welcome, list_restaurants, comment
+from restaurants.views import menu, welcome, list_restaurants, comment,session_test,login,index
 
 
 urlpatterns = [
@@ -24,7 +24,9 @@ urlpatterns = [
     re_path(r'^welcome/$',welcome),
     re_path(r'^restaurants_list/$', list_restaurants),
     re_path(r'^comments/(\d{1,5})/$', comment),
-
+    re_path(r'^session_test/$',session_test),
+    re_path(r'^accounts/login/$',login),
+    re_path(r'^index/$',index),
 
 ]
 
