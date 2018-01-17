@@ -23,30 +23,35 @@
             {% endfor %}
             </table>
         {% else %}
-            <p>無評價</p>
+            <p style="color:darkgreen;">無評價</p>
         {% endif %}
-        <br /><br />
-        {% for e in errors  %}
-            {{ e }} <br/>
-        {% endfor %}
 
-        <br /><br />
+        {% if f.errors %}
+            <p style="color:darkblue;">
+                Please correct the error{{ f.errors|pluralize }} below.
+            </p>
+
+        {% endif %}
+
+
 
         <form action="" method="post">
+            <!--  {{ f.as_table }}  f在 views.py 裏定義為 commentform 的變數 呼叫commentform as_table -->
             <table>
                 <tr>
-                    <td> <label for="user">留言者:</label> </td>
-                    <td> <input id="user" type="text" name="user"> </td>
+                    <th> <label for="id_user">留言者:</label> </th>
+                    <td> {{ f.user  }} </td>
+                    <td> {{ f.user.errors }} </td>
                 </tr>
                 <tr>
-                    <td> <label for="email">電子信箱:</label> </td>
-                    <td> <input id="email" type="text" name="email"> </td>
+                    <th> <label for="id_email">電子信箱:</label> </th>
+                    <td> {{ f.email }} </td>
+                    <td> {{ f.email.errors }} </td>
                 </tr>
                 <tr>
-                    <td> <label for="content">評價:</label> </td>
-                    <td>
-                        <textarea id="content" rows="10" cols="48" name="content"></textarea>
-                    </td>
+                    <th> <label for="id_content">評價:</label> </th>
+                    <td> {{ f.content }} </td>
+                    <td> {{ f.content.errors }} </td>
                 </tr>
             </table>
             <input type="hidden" name="ok" value="yes">
