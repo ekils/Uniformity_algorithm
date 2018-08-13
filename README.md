@@ -1,4 +1,4 @@
-### 均勻度
+### 圓心定位
 ```
 #均勻度
 %matplotlib notebook
