@@ -172,3 +172,14 @@ plt.show()
 
 print 'HDL/TG:{}'.format(ratio1),'  HDL/TC:{}'.format(ratio2),'  TG/TC:{}'.format(ratio3)
 ```
+
+
+
+
+![GitHub Logo](https://github.com/ekils/Uniformity_algorithm/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-04-04%20%E4%B8%8A%E5%8D%8811.03.06.png)<br>
+
+![GitHub Logo](https://github.com/ekils/Uniformity_algorithm/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-04-04%20%E4%B8%8A%E5%8D%8811.03.06.png)<br>
+
+![GitHub Logo](https://github.com/ekils/Uniformity_algorithm/blob/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-04-04%20%E4%B8%8A%E5%8D%8811.03.28.png)<br>
+
+
